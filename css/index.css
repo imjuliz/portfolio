@@ -1,0 +1,386 @@
+/* fonte */
+@font-face {
+    font-family: 'Urbanist Light';
+    src: url('../font/Urbanist-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist Regular';
+    src: url('../font/Urbanist-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist Medium';
+    src: url('../font/Urbanist-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist SemiBold';
+    src: url('../font/Urbanist-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist Bold';
+    src: url('../font/Urbanist-Bold.ttf');
+}
+
+/* estilização geral do corpo do site */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    justify-items: center;
+    height: 90vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* estilização do banner */
+.section-ban {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(216deg, rgba(13, 30, 32, 1) 0%, rgba(49, 62, 42, 1) 70%, rgba(38, 45, 32, 1) 100%);
+    justify-items: center
+}
+
+.banner-container {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.title-box {
+    font-family: 'Urbanist SemiBold';
+    font-size: 45px;
+    margin-top: 0;
+    color: #FFD800
+}
+
+.categorias {
+    color: #B9B9B9;
+    text-decoration: none;
+    font-family: 'Urbanist Medium';
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: fit-content;
+    transition: all 300ms ease;
+}
+
+.categorias:hover {
+    transform: scale(1.09);
+    color: #F0F0F0;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-banner {
+    align-items: flex-start;
+    height: 100%;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-p1 {
+    font-family: 'Urbanist Medium';
+    color: #B9B9B9;
+    margin: 0;
+    font-size: 30px;
+}
+
+.banner-p2 {
+    font-family: 'Urbanist SemiBold';
+    color: #E1E1E1;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+.banner-p3 {
+    font-family: 'Urbanist SemiBold';
+    color: #FFD800;
+    font-size: 50px;
+    margin: 0 0 5vh;
+
+}
+
+.box-banner2 {
+    align-content: center;
+    width: fit-content;
+}
+
+.box-banner3 {
+    align-content: center;
+    width: fit-content;
+}
+
+.banner-img {
+    height: 53vh;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    --color: #FFD800;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    color: var(--color);
+    font-family: 'Urbanist SemiBold';
+    font-size: 17px;
+    height: 5vh;
+    width: 10vw;
+    color: #FFD800;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-download:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 130%;
+    border-radius: 50%;
+}
+
+.btn-download:hover {
+    color: #0E1513;
+}
+
+.btn-download:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.btn-download:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btn-amarelo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    --color: #FFD800;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    color: var(--color);
+    font-family: 'Urbanist SemiBold';
+    font-size: 17px;
+    height: 5vh;
+    width: 12vw;
+    color: #FFD800;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-amarelo2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 130%;
+    border-radius: 50%;
+}
+
+.btn-amarelo2:hover {
+    color: #0E1513;
+}
+
+.btn-amarelo2:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.btn-amarelo2:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btn-amarelo2:hover svg path {
+    fill: #0E1513;
+}
+
+/* seção 1 */
+.container1,
+.container2 {
+    width: 60%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15vh 0 15vh 0;
+}
+
+.container2 {
+    flex-direction: row-reverse;
+}
+
+.title-section {
+    width: fit-content;
+    font-family: 'Urbanist Bold';
+    font-size: 40px;
+    color: #FFD800;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.section1 {
+    background: linear-gradient(260deg, rgba(13,30,32,1) 0%, rgba(49,62,42,1) 100%);    width: 100%;
+    justify-items: center;
+    padding: 7vh 0 7vh 0;
+}
+
+.sobre-title,
+.sobre-text {
+    color: #FFD800
+}
+
+.sobre-title {
+    font-size: 30px;
+    font-family: 'Urbanist SemiBold';
+    margin-top: 0;
+    width: fit-content;
+
+}
+
+.sobre-text {
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Urbanist Regular';
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.container-content {
+    width: 50%;
+}
+
+img.img-sobre {
+    height: 45vh;
+}
+
+.btn-social{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+/* seção 2 */
+.section2 {
+    width: 100%;
+    padding: 7vh 0 7vh 0;
+    background: linear-gradient(216deg, rgba(13, 30, 32, 1) 0%, rgba(49, 62, 42, 1) 70%, rgba(38, 45, 32, 1) 100%);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gride-proj {
+    width: fit-content;
+    transition: all 300ms ease;
+}
+
+.gride-proj:hover {
+    transform: scale(1.05);
+}
+
+.img-projeto {
+    height: 45vh;
+}
+
+.container-proj {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.name-proj {
+    color: #FFD800;
+    font-family: 'Urbanist Medium';
+}
+
+.btn-amarelo3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    --color: #FFD800;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    color: var(--color);
+    font-family: 'Urbanist SemiBold';
+    font-size: 17px;
+    height: 5vh;
+    width: 9vw;
+    color: #FFD800;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-amarelo3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 130%;
+    border-radius: 50%;
+}
+
+.btn-amarelo3:hover {
+    color: #0E1513;
+}
+
+.btn-amarelo3:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.btn-amarelo3:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btn-amarelo3:hover img {
+    fill: #0E1513;
+}
+
+.name-port-a {
+    height: fit-content;
+    width: fit-content;
+}
